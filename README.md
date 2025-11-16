@@ -1,10 +1,10 @@
-## Ejemplo de diagrama Mermaid en README
-
-```mermaid
-flowchart TD
-    A[Inicio] --> B{¿Es válido?}
-    B -->|Sí| C[Procesar datos]
-    B -->|No| D[Mostrar error]
-    C --> E[Fin]
-    D --> E
-```
+%% Sistema de Gestión de Reservas de Danza 
+usecaseDiagram 
+actor Estudiante 
+actor Profesor 
+actor Administrador 
+Estudiante --> (Reservar Clase) 
+Estudiante --> (Ver Horarios) 
+Profesor --> (Registrar Asistencia) 
+Administrador --> (Gestionar Usuarios) 
+Administrador --> (Generar Reportes)
